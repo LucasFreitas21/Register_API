@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeeto API</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/reset.css">
+    <script src="/assets/script/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Cegonha</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="nav-btn btn1">Entrar</a></li>
+                <li><a href="#" class="nav-btn btn2">Criar Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="title">
+                <h2>Cadastrar</h2>
+            </div>
+            <div>
+                <form class="form-container">
+                    <label for="name">Nome Completo:<span class="requied-field">*</span></label>
+                    <input type="text" name="name" id="complete_name" placeholder="Ex: maria Silva" minlength="1"
+                        maxlength="64" required>
+
+                    <label for="age">Data de nascimento:<span class="requied-field">*</span></label>
+                    <input type="date" name="age" id="age" placeholder="Ex: 00/00/0000" minlength="1" maxlength="64"
+                        required>
+
+                    <label for="email">E-mail:<span class="requied-field">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Ex: usuario@email.com" minlength="1"
+                        maxlength="64" required>
+
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Ex: (xx) x xxxx-xxxx" minlength="1"
+                        maxlength="64">
+
+                    <label for="beg-preg">Mês de inicio da gravidez:</label>
+                    <input type="date" name="age" id="age" placeholder="Ex: 00/00/0000" minlength="1" maxlength="64">
+
+                    <label for="childbirth">Mês previsto do parto:</label>
+                    <input type="date" name="age" id="age" placeholder="Ex: 00/00/0000" minlength="1" maxlength="64">
+
+                    <label for="password">Senha:<span class="requied-field">*</span></label>
+                    <input type="password" name="password" id="password" placeholder="Ex: *********" minlength="8"
+                        maxlength="64" required>
+
+                    <label for="password-confirm">Confirmação de senha:<span class="requied-field">*</span></label>
+                    <input type="password" name="password-confirm" id="password-confirm" placeholder="Ex: *********"
+                        minlength="8" maxlength="64" required>
+            </div>
+            </form>
+            <div>
+                <input type="checkbox" name="terms" id="terms"><span>Li e aceito os termos e condições<span
+                        class="requied-field">*</span>.</span>
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+                <button type="button">Cancelar</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
