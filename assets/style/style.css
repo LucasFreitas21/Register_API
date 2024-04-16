@@ -1,6 +1,7 @@
 body {
     /* max-width: 1440px;
     max-height: 1024px; */
+    font-family: ;
 }
 
 /* header && nav */
@@ -57,7 +58,7 @@ main {
 .main-container {
     border: 2px solid #E51951;
     width: 850px;
-    height: 700px;
+    height: 600px;
     color: #0c0c0c;
     border-radius: 20px;
     box-shadow: .5px .5px 11px .1px #FE6E8B;
@@ -80,7 +81,27 @@ h2 {
 }
 
 .form-container {
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    width: 752px;
+    height: 334px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container {
+    margin-left: 50px;
+}
+
+.form-container input {
+    width: 350px;
+    height: 40PX;
+    border-radius: 30PX;
+    border-color: #7e71e198;
+}
+
+.form-container ::placeholder{
+    color: #C20E43;
+    margin-left: 10px;
 }
