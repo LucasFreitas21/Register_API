@@ -29,64 +29,65 @@
                 <form class="form-container">
                     <div class="form-content">
                         <p>Nome Completo<span class="requied-field">*</span>:</p>
-                        <input type="text" name="name" id="complete_name" placeholder="    Ex: maria Silva"
+                        <input type="text" name="name" id="complete_name" class="name" placeholder="    Ex: Maria Silva"
                             minlength="1" maxlength="64" required>
                     </div>
 
                     <div class="form-content">
                         <p>Data de nascimento<span class="requied-field">*</span>:</p>
-                        <input type="date" name="age" id="age" placeholder="       Ex: 00/00/0000" minlength="1"
-                            maxlength="64" required>
+                        <input type="text" name="age" id="age" placeholder="       Ex: 00/00/0000"
+                            onfocus="this.type='date'" onblur="if (!this.value) this.type='text'" required>
                     </div>
 
                     <div class="form-content">
                         <p>E-mail<span class="requied-field">*</span>:</p>
                         <input type="email" name="email" id="email" placeholder="     Ex: usuario@email.com"
-                            minlength="1" maxlength="64" required>
+                            minlength="7" maxlength="64" required>
                     </div>
 
 
                     <div class="form-content">
                         <p>Telefone:</p>
-                        <input type="tel" name="tel" id="tel" placeholder="     Ex: (xx) x xxxx-xxxx" minlength="1"
+                        <input type="tel" name="tel" id="tel" placeholder="     Ex: (xx) x xxxx-xxxx" minlength="11"
                             maxlength="64">
                     </div>
 
 
                     <div class="form-content">
                         <p>Mês de inicio da gravidez:</p>
-                        <input type="date" name="age" id="age" placeholder="     Ex: 00/00/0000" minlength="1"
-                            maxlength="64">
+                        <input type="text" name="age" id="age" placeholder="     Ex: 00/00/0000"
+                            nfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
                     </div>
 
 
                     <div class="form-content">
                         <p>Mês previsto do parto:</p>
-                        <input type="date" name="age" id="age" placeholder="     Ex: 00/00/0000" minlength="1"
-                            maxlength="64">
+                        <input type="text" name="parto" id="parto" placeholder="     Ex: 00/00/0000"
+                            nfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
                     </div>
 
 
                     <div class="form-content">
                         <p>Senha<span class="requied-field">*</span>:</p>
                         <input type="password" name="password" id="password" placeholder="     Ex: *********"
-                            minlength="8" maxlength="64" required>
+                            class="pass" minlength="8" maxlength="64" required>
                     </div>
 
                     <div class="form-content">
                         <p>Confirmação de senha<span class="requied-field">*</span>:</p>
-                        <input type="password" name="password-confirm" id="password-confirm"
+                        <input type="password" name="password-confirm" id="password-confirm" class="pass-confirm"
                             placeholder="     Ex: *********" minlength="8" maxlength="64" required>
                     </div>
             </div>
             </form>
-            <div>
-                <input type="checkbox" name="terms" id="terms"><span>Li e aceito os termos e condições<span
-                        class="requied-field">*</span>.</span>
+            <div class="checked-box">
+                <input type="checkbox" name="terms" id="terms">
+                <label>Li e aceito os termos e condições<span class="requied-field">*</span>.</label>
             </div>
-            <div>
-                <button type="submit">Cadastrar</button>
-                <button type="button">Cancelar</button>
+
+            <div class="btn-accept">
+                <button type="submit" id="btn-accept__2">Cadastrar</button>
+                <button type="button" id="btn-accept__2">Cancelar</button>
             </div>
         </div>
     </main>

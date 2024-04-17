@@ -1,7 +1,7 @@
 body {
     /* max-width: 1440px;
     max-height: 1024px; */
-    font-family: ;
+
 }
 
 /* header && nav */
@@ -58,7 +58,7 @@ main {
 .main-container {
     border: 2px solid #E51951;
     width: 850px;
-    height: 600px;
+    height: 580px;
     color: #0c0c0c;
     border-radius: 20px;
     box-shadow: .5px .5px 11px .1px #FE6E8B;
@@ -94,14 +94,66 @@ h2 {
     margin-left: 50px;
 }
 
+.form-container p {
+    margin-bottom: 7px;
+}
+
 .form-container input {
     width: 350px;
     height: 40PX;
     border-radius: 30PX;
-    border-color: #7e71e198;
+    border: 1px solid #C0BFF3;
+    padding: 15px;
 }
 
-.form-container ::placeholder{
-    color: #C20E43;
+.form-container ::placeholder {
+    color: #C0BFF3;
     margin-left: 10px;
+}
+
+
+
+.checked-box {
+    margin-top: 15px;
+    align-items: center;
+}
+
+.requied-field {
+    color: #E51951;
+}
+
+#terms {
+    margin-left: 65px;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    border: 1px solid #8A113C;
+    appearance: none;
+    cursor: pointer;
+}
+
+#terms:checked {
+    background-color: #F83B66;
+}
+
+.btn-accept {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+#btn-accept__1,
+#btn-accept__2 {
+    background-color: #F83B66;
+    width: 230px;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    box-shadow: .5px .5px 11px .1px #FE6E8B;
+    cursor: pointer;
 }
